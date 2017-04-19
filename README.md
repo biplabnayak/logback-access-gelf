@@ -1,12 +1,35 @@
-LOGBACK-ACCESS-GELF - A GELF Appender for Logback Access
+logback-access-gelf :  A GELF Appender for Logback Access
 ==========================================
 
 Use this appender to log access logs to a Graylog2 server via GELF messages.
 
-If you don't know what [Graylog2](http://graylog2.org) is, jump on the band wagon!
+Inspired from : [logback-gelf](https://github.com/Moocar/logback-gelf)
+
+Using Logback Access
+--------------------
+Repository Configuration :
 
 
-Configuring Logback
+    <repositories>
+         <repository>
+             <snapshots>
+                 <enabled>false</enabled>
+             </snapshots>
+             <id>bintray-biplabnayak-maven</id>
+             <name>bintray</name>
+             <url>http://dl.bintray.com/biplabnayak/maven</url>
+         </repository>
+      </repositories>
+      
+Dependency :
+
+    <dependency>
+    	<groupId>com.capgemini</groupId>
+    	<artifactId>logback-access-gelf</artifactId>
+    	<version>0.0.2</version>
+    </dependency>
+
+Configuring Logback-Access
 ---------------------
 
 Add the following to your logback-access.xml configuration file.

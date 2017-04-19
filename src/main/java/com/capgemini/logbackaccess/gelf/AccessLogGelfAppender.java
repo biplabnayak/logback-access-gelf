@@ -18,7 +18,7 @@ import java.util.Map;
  */
 public class AccessLogGelfAppender extends AppenderBase<AccessEvent> {
 
-    // The following are configurable via logback configuration
+    // Logback configurations - Configurable
     private String facility = "GELF";
     private String graylog2ServerHost = "localhost";
     private int graylog2ServerPort = 12201;
