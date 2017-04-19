@@ -30,9 +30,7 @@ Add the following to your logback-access.xml configuration file.
         		<headers>Test-Header</headers>
         	</appender>
 
-        <root level="debug">
-            <appender-ref ref="GELF" />
-        </root>
+         <appender-ref ref="GELF" />
     </configuration>
 
 Properties
@@ -43,8 +41,6 @@ Properties
 *   **graylog2ServerPort**: The graylog2ServerPort of the graylog2 server to send messages to. Defaults to 12201
 *   **graylog2ServerVersion**: Specify which version the graylog2-server is. This is important because the GELF headers
 changed from 0.9.5 -> 0.9.6. Allowed values = 0.9.5 and 0.9.6. Defaults to "0.9.6"
-*   **chunkThreshold**: The maximum number of bytes allowed by the payload before the message should be chunked into
-smaller packets. Defaults to 1000
 *   **staticAdditionalFields**: See static additional fields below. Defaults to empty
 
 
