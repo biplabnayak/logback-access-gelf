@@ -11,8 +11,6 @@ Configuring Logback
 
 Add the following to your logback-access.xml configuration file.
 
-[src/main/resources/logback.xml](https://github.com/Moocar/logback-gelf/blob/master/src/test/resources/logback.xml)
-
     <configuration>
         <appender name="GELF" class="com.capgemini.logbackaccess.gelf.AccessLogGelfAppender">
         		<facility>sample-service-access</facility>
@@ -29,7 +27,6 @@ Add the following to your logback-access.xml configuration file.
         		<responseContent>true</responseContent>
         		<headers>Test-Header</headers>
         	</appender>
-
          <appender-ref ref="GELF" />
     </configuration>
 

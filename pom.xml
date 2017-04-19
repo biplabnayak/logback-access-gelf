@@ -29,8 +29,8 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:Moocar/logback-gelf.git</connection>
-    <developerConnection>scm:git:git@github.com:Moocar/logback-gelf.git</developerConnection>
+    <connection>scm:git:git@github.com:biplabnayak/logback-access-gelf.git</connection>
+    <developerConnection>scm:git:git@github.com:biplabnayak/logback-access-gelf.git</developerConnection>
     <url>git@github.com:biplabnayak/logback-access-gelf.git</url>
   </scm>
 
@@ -111,28 +111,6 @@
           <archive>
             <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
           </archive>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <extensions>true</extensions>
-        <executions>
-          <execution>
-            <id>bundle-manifest</id>
-            <phase>process-classes</phase>
-            <goals>
-              <goal>manifest</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <instructions>
-            <!-- packages to export -->
-            <Export-Package>me.moocar.logbackgelf</Export-Package>
-            <!-- attach to Logback bundle as fragment -->
-            <Fragment-Host>ch.qos.logback.classic</Fragment-Host>
-          </instructions>
         </configuration>
       </plugin>
 
