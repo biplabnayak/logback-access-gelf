@@ -5,19 +5,10 @@
   <groupId>com.capgemini</groupId>
   <artifactId>logback-access-gelf</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.3</version>
+  <version>0.0.4</version>
   <name>logback-access-gelf</name>
-
-  <parent>
-    <groupId>org.sonatype.oss</groupId>
-    <artifactId>oss-parent</artifactId>
-    <version>7</version>
-  </parent>
-
   <description>Adapter for sending Access log to graylog server.</description>
-
   <url>https://github.com/biplabnayak/logback-access-gelf</url>
-
   <inceptionYear>2017</inceptionYear>
 
   <licenses>

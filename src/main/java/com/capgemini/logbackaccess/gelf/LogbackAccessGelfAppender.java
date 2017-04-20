@@ -86,9 +86,6 @@ public class LogbackAccessGelfAppender extends AppenderBase<AccessEvent> {
     private ILoggingEvent convertAccessEvent(final AccessEvent accessEvent) {
         LoggingEvent loggingEvent = new LoggingEvent();
         loggingEvent.setLevel(Level.INFO);
-        int statusCode = accessEvent.getStatusCode();
-        long elapsedTime = accessEvent.getElapsedTime();
-        long contentLength = accessEvent.getContentLength();
         Map<String, String> mdcMap = getRequiredHeaders(accessEvent);
         populateAccessLogfields(mdcMap, accessEvent);
         loggingEvent.setMessage(accessEvent.getRequestURL() );

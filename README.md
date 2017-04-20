@@ -26,7 +26,7 @@ Dependency :
     <dependency>
     	<groupId>com.capgemini</groupId>
     	<artifactId>logback-access-gelf</artifactId>
-    	<version>0.0.2</version>
+    	<version>0.0.4</version>
     </dependency>
 
 Configuring Logback-Access
