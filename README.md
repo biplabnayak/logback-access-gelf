@@ -3,7 +3,7 @@ logback-access-gelf :  A GELF Appender for Logback Access
 
 Use this appender to log access logs to a Graylog2 server via GELF messages.
 
-Inspired from : [logback-gelf](https://github.com/Moocar/logback-gelf)
+This extends the functionality for [logback-gelf](https://github.com/Moocar/logback-gelf) for sending access log to Graylog Server.
 
 Using Logback Access
 --------------------
@@ -62,6 +62,8 @@ Properties
 *   **graylog2ServerVersion**: Specify which version the graylog2-server is. This is important because the GELF headers
 changed from 0.9.5 -> 0.9.6. Allowed values = 0.9.5 and 0.9.6. Defaults to "0.9.6"
 *   **staticAdditionalFields**: See static additional fields below. Defaults to empty
+*   **contentLength**: Boolean : to send content length to graglog
+*   **header**: String,: List all headers you want to log with comma(,) separated.
 
 
 Static Additional Fields

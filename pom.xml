@@ -5,7 +5,7 @@
   <groupId>com.capgemini</groupId>
   <artifactId>logback-access-gelf</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
   <name>logback-access-gelf</name>
 
   <parent>
@@ -14,7 +14,7 @@
     <version>7</version>
   </parent>
 
-  <description>GELF Appender for logback access. Use this appender to log access logs to a graylog2 server via GELF messages.</description>
+  <description>Adapter for sending Access log to graylog server.</description>
 
   <url>https://github.com/biplabnayak/logback-access-gelf</url>
 
@@ -43,24 +43,15 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.6.6</version>
+      <groupId>me.moocar</groupId>
+      <artifactId>logback-gelf</artifactId>
+      <version>0.10p1</version>
     </dependency>
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-classic</artifactId>
-      <version>1.1.2</version>
-    </dependency>
+
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-access</artifactId>
       <version>1.1.2</version>
-    </dependency>
-    <dependency>
-      <groupId>com.google.code.gson</groupId>
-      <artifactId>gson</artifactId>
-      <version>2.1</version>
     </dependency>
   </dependencies>
 
