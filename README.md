@@ -59,8 +59,6 @@ Properties
 *   **facility**: The name of your service. Appears in facility column in graylog2-web-interface. Defaults to "GELF"
 *   **graylog2ServerHost**: The hostname of the graylog2 server to send messages to. Defaults to "localhost"
 *   **graylog2ServerPort**: The graylog2ServerPort of the graylog2 server to send messages to. Defaults to 12201
-*   **graylog2ServerVersion**: Specify which version the graylog2-server is. This is important because the GELF headers
-changed from 0.9.5 -> 0.9.6. Allowed values = 0.9.5 and 0.9.6. Defaults to "0.9.6"
 *   **staticAdditionalFields**: See static additional fields below. Defaults to empty
 *   **contentLength**: Boolean : to send content length to graglog
 *   **header**: String,: List all headers you want to log with comma(,) separated.
@@ -80,3 +78,22 @@ E.g in the appender configuration:
             ...
         </appender>
         ...
+
+
+Publish to bintray
+-----------------
+
+Add below configuration to maven settings.xml.
+ 
+ 
+     		<server>
+     		    <id>bintray-biplabnayak-maven</id>
+     		    <username>biplabnayak</username>
+     		    <password>***secret api key***</password>
+     		</server>
+    
+   
+Command :
+
+
+            mvn clean deploy
